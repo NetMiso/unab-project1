@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.android.project1.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="32dp"
+            android:text="@string/header"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:contentDescription="@string/cd_club_image"
+            android:id="@+id/playboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:scaleType="centerInside"
+            android:src="@drawable/playboard"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/clubName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/club_name"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/mailContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/contact"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/placeTimeContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/location_time"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>
